@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Ubuntu&display=swap');
+
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #BDB1EB;
+}
+#seleccionar_mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    font-family: 'Ubuntu', sans-serif;
+    color:#F6DB8F;
+    font-size: 50px;
+    /* display: flex; */
+    /* align-items: flex-start; */
+}
+
+.Subtitulo {
+    font-size: 22px;
+}
+
+.Tarjeta {
+    display: flex;
+    gap: 10px;
+    flex-direction: row-reverse;
+}
+
+.tarjeta-de-mokepon {
+    width: 194px;
+    height: 126px;
+    background-color: #AAC4FF;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 12px;
+    border: 1px;
+    border-radius: 20px;
+    display: flex;
+    color:black;
+    font-size: 20px;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+.tarjeta-de-mokepon img {
+    width: 88px;
+}
+
+#seleccionar_ataque{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#boton_mascota {
+    font-family: 'Poppins', sans-serif;
+    width: 182px;
+    height: 49px;
+    background-color: #AAC4FF;
+    padding: 11px;
+    box-sizing: border-box;
+    margin: 8px;
+    border: 1px;
+    font-size: x-large;
+    border-radius: 20px;
+    margin: 30px 20px 10px 20px;
+}
+
+#boton_reiniciar{
+    font-family: 'Poppins', sans-serif;
+    background-color: #AAC4FF;
+    border: transparent;
+}
+
+.Tarjeta_ataque {
+    display: flex;
+    
+}
+
+.tarjeta-de-ataque{
+    font-family: 'Poppins', sans-serif;
+    background-color: #AAC4FF;
+    border-radius: 20px;
+    width: 248px;
+    height: 68px;
+    margin: 10px;
+    color: black;
+    /* box-sizing: border-box; */
+    border: 37px black;
+    /* display: flex; */
+}
+
+#Mensaje{
+    width: 200px;
+    background: #AAC4FF;
+    padding: 23px;
+    /* margin-top: 12px; */
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    margin: 30px;
+    flex-direction: column;
+}
+
+input{
+    display: none; 
+}
+
+input:checked + label {
+    background-color: #9F73AB;
+}
+
+.AtaquesMokepon{
+    display: grid;
+    grid-template-columns: 110px  110px;
+}
+
+.AtaqueJugador1, .AtaqueEnemigo1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media (max-width: 300px){
+    .Tarjeta, .Tarjeta_ataque{
+        flex-direction: column;
+    }
+
+}

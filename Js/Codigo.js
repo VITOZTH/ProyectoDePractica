@@ -17,7 +17,7 @@ function aleatoria(maximo, minimo){
 
 //1 es piedra, 2 es papel, 3 es roca
 let jugador = 0
-let pc = 0
+let pc = 0  
 let triunfos = 0
 let perdidas = 0
 

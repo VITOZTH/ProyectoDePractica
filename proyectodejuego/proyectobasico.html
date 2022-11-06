@@ -5,11 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyacto Basico</title>
+    <link rel="stylesheet" href="./stylen.css">
 </head>
-<body>
-    <h1>Proyecto basico 😎😎😎</h1>
-    <p>
-        <button> Fuego 🔥</button>
-    </p>
+<body>   
+    <section id="seleccionar_mascota">
+        <h1 class="titulo">Mokepon</h1>
+        <h2 class="Subtitulo">Elige a tu mascota</h2>
+        <div id='ContenedorTarjetas' class="Tarjeta">     
+        </div>
+        <button id="boton_mascota">Selecionar</button>
+    </section>
+
+    <section id="seleccionar_ataque">
+        <h1 class="titulo">Mokepon</h1>
+        <h2 class="Subtitulo">Elige a tu ataque:</h2>
+
+        <div id= 'ContenedorAtaque' class="Tarjeta_ataque">
+        </div>   
+
+          <div id="Mensaje">
+                <p id="resultado">Muchos exitos</p>
+                <section id="Reinicio">
+                    <button id="boton_reiniciar">Reiniciar</button>
+                </section>
+            </div>
+        
+        <div class='AtaquesMokepon'>
+            <div class="AtaqueJugador1">
+                <p id="vidaDeJugador">3</p>
+                <p id="M_jugador"></p> 
+                <div id="ataque-del-jugador"></div>
+            </div>
+            <div class="AtaqueEnemigo1">
+                <p id="vidaDeEnemigo">3</p>
+                <p id="M_enemigo"> </p> 
+                <div id="ataque-del-enemigo"></div>     
+            </div>
+        </div>
+  
+    </section>
+    <script src="./js/proyecto.js"></script>
 </body>
 </html>
