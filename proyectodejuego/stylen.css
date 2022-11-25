@@ -120,16 +120,24 @@ input:checked + label {
     grid-template-columns: 110px  110px;
 }
 
+.ContenedorJugadorEnemeigo img {
+    width: 88px;
+}
+
 .AtaqueJugador1, .AtaqueEnemigo1{
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
+}
+
+button:hover,
+.tarjeta-de-mokepon:hover {
+    cursor: pointer;
+    filter: brightness(90%);
+}
+
+.tarjeta-de-mokepon:hover {
+    background-color: #9F73AB;
 }
 
 
-@media (max-width: 300px){
-    .Tarjeta, .Tarjeta_ataque{
-        flex-direction: column;
-    }
-
-}
